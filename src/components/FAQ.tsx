@@ -32,15 +32,15 @@ export const FAQ = () => {
   return (
     <section className="py-20 bg-blue-50">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
+        <div className="text-left mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Perguntas Frequentes
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-2xl">
             Tire suas dúvidas sobre o ZapIA Clinic
           </p>
         </div>
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-3xl">
           <Accordion type="single" collapsible className="w-full">
             {faqs.map((faq, index) => (
               <AccordionItem key={index} value={`item-${index}`}>
