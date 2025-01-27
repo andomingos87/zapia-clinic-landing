@@ -17,8 +17,8 @@ const stats = [
     icon: Calendar,
   },
   {
-    value: "500+",
-    label: "Clínicas Atendidas",
+    value: "70%",
+    label: "Economia de Tempo",
     icon: Building,
   },
 ];
