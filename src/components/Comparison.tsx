@@ -8,13 +8,20 @@ import {
   TableRow,
 } from "@/components/ui/table";
 
-const features = [
-  "Atendimento 24/7",
-  "Agendamento Automático",
-  "Triagem Inteligente",
-  "Integração WhatsApp",
-  "Relatórios Detalhados",
-  "Suporte Especializado",
+const sharedFeatures = [
+  "Empatia e conexão pessoal",
+  "Adaptabilidade a situações complexas",
+];
+
+const exclusiveFeatures = [
+  "Flexibilidade em diferentes tipos de interação",
+  "Disponibilidade 24/7",
+  "Velocidade e eficiência",
+  "Capacidade de multitarefa",
+  "Redução de custos operacionais",
+  "Respostas consistentes e imediatas",
+  "Análise de dados e geração de insights",
+  "Integração com sistemas digitais",
 ];
 
 export const Comparison = () => {
@@ -39,7 +46,18 @@ export const Comparison = () => {
               </TableRow>
             </TableHeader>
             <TableBody>
-              {features.map((feature) => (
+              {sharedFeatures.map((feature) => (
+                <TableRow key={feature}>
+                  <TableCell className="font-medium">{feature}</TableCell>
+                  <TableCell className="text-center">
+                    <Check className="w-5 h-5 text-secondary mx-auto" />
+                  </TableCell>
+                  <TableCell className="text-center">
+                    <Check className="w-5 h-5 text-secondary mx-auto" />
+                  </TableCell>
+                </TableRow>
+              ))}
+              {exclusiveFeatures.map((feature) => (
                 <TableRow key={feature}>
                   <TableCell className="font-medium">{feature}</TableCell>
                   <TableCell className="text-center">
