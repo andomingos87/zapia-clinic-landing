@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
+import { Facebook, Instagram } from "lucide-react";
 
 export const Footer = () => {
   return (
@@ -16,12 +16,6 @@ export const Footer = () => {
               </a>
               <a href="#" className="hover:text-primary">
                 <Instagram size={20} />
-              </a>
-              <a href="#" className="hover:text-primary">
-                <Twitter size={20} />
-              </a>
-              <a href="#" className="hover:text-primary">
-                <Linkedin size={20} />
               </a>
             </div>
           </div>
